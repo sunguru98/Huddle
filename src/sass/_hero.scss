@@ -5,7 +5,7 @@
         align-items: center;
         justify-content: space-between;
         & a{ 
-            @include phone(){width: 40%;}
+            @include phone(){max-width: 40%;}
             & img { @include phone(){ width: 100%; } }
         }
         &-cta{
