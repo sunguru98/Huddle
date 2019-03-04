@@ -1,0 +1,60 @@
+.about{
+    padding: 7.5rem 8rem 26rem 8rem;
+    margin-top: 20rem;
+
+    &__features-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include tablet{ flex-direction: column; text-align: center; }
+    }
+    
+    &__tryit-container{
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 1rem .5rem rgba($primary-color, 0.1), 0 0 1rem rgba($neutral-color-mid-greyish-blue, 0.1);
+        @include tablet{ box-shadow: 0 2rem 10px 1.5rem rgba($neutral-color-mid-greyish-blue, 0.05); }
+        display: inline-block;  
+        padding: 9rem 12.5rem 11.5rem 12.5rem;
+        @include tablet{ padding: 7rem 3rem 8rem; }
+        margin: 27rem auto 0 auto;
+        position: relative;
+        left: 50%;
+        margin-left: -32.6rem;
+        text-align: center;
+
+        @include tablet{ width: 100%; position: static; margin-left: 0; }
+
+        &--text{
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        &--button{
+            margin-top: 4rem;
+            display: inline-block;
+            padding: 1.5rem 6.5rem;
+            box-shadow: 0 0 1rem $neutral-color-mid-greyish-blue;
+            color: rgba($neutral-color-light-greyish-blue, 0.9);
+            background: $primary-color;
+            box-shadow: 0 0 1rem $primary-color;
+            transition: all .5s;
+            &:hover{ box-shadow: 0 0 2.5rem $primary-color;}
+            @include tablet{ width: 70%; }
+        }
+    }
+
+    &__illustration-container { flex-basis: 60%; margin-right: auto; }
+    &__illustration { width: 85%; @include tablet{ margin-bottom: 25.2rem;  }}
+
+    &__list{
+        flex: 1;
+    }
+    &__item:not(:last-of-type){
+        margin-bottom: 5.5rem;
+        @include tablet{ margin-bottom: 9rem; }
+    }
+    &__item{
+        & h2{ margin-bottom: 3.5rem;  @include tablet{ margin-bottom: 5rem; } }
+    }
+}       

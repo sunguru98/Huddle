@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+html{
+    font-size: 62.5%;
+
+    @include desktop(){font-size: 50%; }
+    @include laptop(){ font-size: 43.75%; }
+    @include tablet(){ font-size: 37.5%; }
+    @include phone(){ font-size: 25%; }
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+a{ font-family: Poppins, sans-serif; color: darken($primary-color, 35%); font-size: 1.5rem; 
+    @include tablet(){ font-size: 3rem; }
+}
+
+h1, h2{ 
+    font-family: Poppins, sans-serif;  color: $neutral-color-dark-cyan; 
+}
+h1{ 
+    font-weight: 700; 
+    font-size: 3rem;
+    @include tablet{
+        font-size: 6rem;
+    }  
+} 
+h2{ 
+    font-size: 2.5rem;
+    font-weight: 600;
+    @include tablet{
+        font-size: 5rem;
+    }
+}
+
+.hero p{ font-size: 2rem; @include tablet{ font-size: 4rem } color: $neutral-color-mid-greyish-blue; line-height: 1.6; }
+.about p{ font-size: 1.8rem; @include tablet{ font-size: 4rem } line-height: 1.6 }
+
+.about__tryit-container--message{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    display: block;
+    color: $neutral-color-mid-greyish-blue;
+    font-size: 1.5rem;
+    @include tablet{ font-size: 2.5rem; }
+}
+
+.about__tryit-container h1{  @include tablet{ font-size: 5rem; } }
+
+.about__tryit-container--button{ font-weight: 400; @include tablet{ font-size: 2rem; } }
+.footer-desk, .footer-mob{ font-weight: 200; }
+.footer__logo-container--copy { font-family: Poppins; letter-spacing: .5px; }
+.footer-desk li, .footer-mob li { font-size: 1.7rem; font-family: 'Open Sans', sans-serif; font-weight: 300; text-transform: capitalize;}
+.footer-mob li { font-size: 3.5rem;}
+.footer-desk__subscribe-container h3{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.footer__subscribe-container p{
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color: $neutral-color-mid-greyish-blue;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.footer-desk__subscribe-container input[type="text"] { font-size: 2rem; }
+.footer-desk__subscribe-container input[type="submit"] { font-size: 1.5rem; font-family: 'Open Sans', sans-serif; font-weight: 300; }
+
+.footer-mob .footer__subscribe-container{
+    text-align: center;
+}
+ 
+.footer-mob .footer__subscribe-container p{ font-size: 3.5rem; }
+.footer-mob .footer__subscribe-container h3{ font-size: 4rem; text-transform: uppercase; font-family: 'Open Sans', sans-serif;
+    font-weight: 400;}
+.footer-mob .footer__subscribe-container input[type="text"] { font-size: 4rem; }
+.footer-mob .footer__subscribe-container input[type="submit"] { font-size: 3rem; font-family: 'Open Sans', sans-serif; color: #fff !important; }
+.footer-mob .footer__social-container--copy{ font-size: 3rem; font-family: Poppins, sans-serif; margin-bottom: 5rem; }

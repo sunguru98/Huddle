@@ -1,0 +1,19 @@
+{
+  "name": "huddle",
+  "version": "1.0.0",
+  "description": "A fictional where users can create connections and talk to each other",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --out-dir docs",
+    "build": "parcel build src/index.html --out-dir docs --public-url ./",
+    "deploy": "npm run build && git add . && git commit -a -m 'Completed whole responsive layout' && git push origin master"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.11.0"
+  },
+  "devDependencies": {
+    "sass": "^1.17.2"
+  }
+}

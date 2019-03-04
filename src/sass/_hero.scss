@@ -1,0 +1,35 @@
+.hero{
+    padding: 7.5rem 8rem;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & a{ 
+            @include phone(){width: 40%;}
+            & img { @include phone(){ width: 100%; } }
+        }
+        &-cta{
+            padding: 1.5rem 6.5rem;
+            @include phone{ padding: 1.5rem 2rem; text-align: center;}
+            background: $neutral-color-light-greyish-blue;
+            box-shadow: 0 0 1rem $neutral-color-mid-greyish-blue;
+        }
+    }
+
+    &__area{
+        max-width: 80rem;
+        margin: 10.5rem auto 0 auto; 
+        text-align: center;
+        &-image{ width: 100%; text-align: center}
+        &-text{ margin-top: 7.5rem; margin-bottom: 2rem; }
+        &-paragraph{ margin-bottom: 3.5rem; @include tablet{ margin-bottom: 6rem; } }
+        &-cta{
+            padding: 1.5rem 6.5rem;
+            background: $primary-color;
+            color: rgba($neutral-color-light-greyish-blue, 0.7);
+            box-shadow: 0 0 1rem $primary-color;
+            transition: all .5s;
+            &:hover{ box-shadow: 0 0 2.5rem $primary-color;}
+        }
+    }
+}

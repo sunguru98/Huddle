@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+body{ background: $neutral-color-light-greyish-blue; position: relative;}
+
+.container{
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+a,
+a:visited,
+a:hover,
+a:active{ text-decoration: none; border-radius: 5px; }
+
+ul{ list-style: none; }
+
+p{ font-size: 1.5rem; color: $neutral-color-mid-greyish-blue; }
